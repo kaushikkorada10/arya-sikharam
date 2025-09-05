@@ -1,0 +1,119 @@
+/* Modern Real Estate Brochure Styles */
+
+body {
+    background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: #232946;
+}
+
+.navbar {
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    background: #fff !important;
+}
+.navbar-brand {
+    color: #4f46e5 !important;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px #e0e7ff;
+}
+
+.wider-carousel {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 32px rgba(44, 62, 80, 0.18);
+    background: #fff;
+}
+.carousel-inner img {
+    transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.10);
+}
+.carousel-inner img:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: drop-shadow(0 2px 6px #4f46e5);
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #4f46e5;
+}
+
+h2 {
+    color: #4f46e5 !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background: #fff;
+}
+.card:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+    transform: translateY(-6px) scale(1.03);
+}
+.card-title {
+    color: #4f46e5;
+    font-weight: 600;
+}
+.card-text {
+    color: #232946;
+}
+
+.btn-outline-primary {
+    border-color: #4f46e5;
+    color: #4f46e5;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-outline-primary:hover {
+    background: #4f46e5;
+    color: #fff;
+    box-shadow: 0 2px 12px #4f46e5a0;
+}
+
+/* Brochure Gallery */
+.img-fluid.rounded.shadow {
+    border: 3px solid #e0e7ff;
+    box-shadow: 0 2px 16px #4f46e520;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+.img-fluid.rounded.shadow:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 32px #4f46e540;
+    border: 3px solid #4f46e5;
+}
+
+/* Location Image */
+.card img[alt="Location Map"] {
+    border: 2px solid #4f46e5;
+    box-shadow: 0 4px 24px #4f46e520;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.card img[alt="Location Map"]:hover {
+    box-shadow: 0 8px 32px #4f46e540;
+    border: 2px solid #232946;
+}
+
+/* Contact Card */
+.card .mb-3 {
+    color: #232946 !important;
+}
+.lead {
+    color: #4f46e5;
+    font-weight: 500;
+    text-shadow: 1px 1px 8px #e0e7ff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+    .wider-carousel {
+        border-radius: 10px;
+    }
+    .card {
+        border-radius: 10px;
+    }
+}
